@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Invoice</title>
+</head>
+<body>
+  <div class="invoice-container">
+    <!-- Header Section -->
+    <div class="header">
+      <div class="logo">
+        <img src="/imgs/logo.png" alt="Logo">
+      </div>
+      <div class="order-info">
+        <p><strong>INVOICE#</strong> IN0821112<br>
+        <strong>ORDER#</strong> 2565434<br>
+        <strong>ORDER DATE#</strong> 11/10/24<br>
+        <strong>PAYMENT</strong> CREDIT CARD<br>
+        <strong>SHIPPING</strong> UPS</p>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Billing and Shipping Section -->
+    <div class="address-container">
+      <div class="bill-to">
+        <h3>BILL TO</h3>
+        <p>Jacob Faber<br>456 Street Road,<br>Boston MA 08374<br>555-555-5555</p>
+      </div>
+      <div class="ship-to">
+        <h3>SHIP TO</h3>
+        <p>Jhon Smith<br>123 Street St,<br>Denver, CO 80205<br>555-555-5555</p>
+      </div>
+    </div>
+
+    <!-- Items Table -->
+    <table class="item-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product Name</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="./imgs/item1.png" alt="Cable Clips" class="item-image"></td>
+          <td>Wedding Photos</td>
+          <td>1</td>
+          <td>$100</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td><img src="./imgs/item2.png" alt="Car Charger" class="item-image"></td>
+          <td>Bride & Groom Portraits</td>
+          <td>2</td>
+          <td>$120</td>
+          <td>$240</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Summary Section -->
+    <div class="summary">
+      <div class="company-info">
+        <p><strong>COMPANY NAME</strong><br>
+        35, Main Road Street 2nd Floor Bartok Way<br>
+        Menlo Park, California 43592, United States<br>
+        https://photostore.com</p>
+      </div>
+      <div class="totals">
+        <p><strong>Sub Total:</strong> $340</p>
+        <p><strong>Shipping:</strong> $10</p>
+        <p><strong>Tax:</strong> $5</p>
+        <hr>
+        <p><strong>Grand Total:</strong> $355</p>
+      </div>
+    </div>
+
+    <div class="invoice-footer">
+        <p>Thank you for your business!</p>
+        <p>If you have any questions, feel free to contact us at <a href="mailto:support@yourcompany.com">support@yourcompany.com</a></p>
+      </div>
+  </div>
+</body>
+</html>
